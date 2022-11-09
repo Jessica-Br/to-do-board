@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jessica Brändli, To-Do Liste</title>
+    <script src="/assets/js/main.js"></script>
+    <link rel="stylesheet" href="assets/styles/styles.css">
+</head>
+<body>
+    <!--Header - task input form-->
+    <header>
+        <h1>Ihre persönliche To-Do Liste</h1>
+        <form id="new-todo-form">
+                <input 
+                    type="text"
+                    id="new-todo-input"
+                    placeholder="Was wollen Sie heute erledigen?"
+                />
+                <input 
+                    type="submit"
+                    id="new-todo-submit"
+                    value="+"
+                />
+        </form>
+    </header>
+    <!--Main - task board-->
+    <main>
+        <section class="todo-list">
+            <h2>Taskboard</h2>
+            <hr>
+            <div id="todos">
+                <!--This is where the tasks will be created and added-->
+                <!--Example task card-->
+                <div class="todo">
+                    <div class="content">
+                        <input 
+                            type="text"
+                            class="text"
+                            value="Das ist ein Beispiel."
+                            readonly
+                        >
+                    </div>
+                    <div class="actions">
+                        <button class="edit">Bearbeiten</button>
+                        <button class="done">Erledigt</button>
+                    </div>
+                </div>
+                <hr style="margin-top: 1rem;">
+            </div>
+            <div class="btn-clear">
+                <button class="clear">Alles löschen</button>
+            </div>
+        </section>
+        <!--This is where finished tasks will be displayed-->
+        <!--Work in Progress-->
+        <!-- 
+        <section class="todo-done">
+            <h2>Erledigte Aufgaben</h2>
+            <hr>
+            <div id="finished-todos">
+                <div class="finished-content">
+                   <ul>Erledigt 1</ul>
+                   <ul>Erledigt 2</ul>
+                   <ul>Erledigt 3</ul>
+                   <ul>Erledigt 4</ul>
+                </div>
+            </div>
+        
+        </section>-->
+    </main>
+    <!--Footer - creator-->
+    <footer>
+        <p>By Jessica Brändli, Oct. 2022</p>
+    </footer>
+</body>
+</html>
